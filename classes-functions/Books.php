@@ -8,12 +8,15 @@
 
 class Books
 {
-    public function name(){
+    public function name()
+    {
         echo "Drupal book";
-  }
-    public function price(){
+    }
+
+    public function price()
+    {
         echo "900 Rs";
-  }
+    }
 }
 
 
