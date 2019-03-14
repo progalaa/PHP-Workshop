@@ -1,24 +1,38 @@
 <?php
-abstract class Cars {
+
+abstract class Cars
+{
     public abstract function getCompanyName();
+
     protected abstract function getPrice();
 }
-class BMW  extends Cars {
-    public function getCompanyName() {
+
+class BMW extends Cars
+{
+    public function getCompanyName()
+    {
         return "Maruthi Suzuki" . '<br/>';
     }
-    public  function getPrice() {
+
+    public function getPrice()
+    {
         return 720000 . '<br/>';
     }
 }
-class Elantra extends Cars {
-    public function getCompanyName() {
+
+class Elantra extends Cars
+{
+    public function getCompanyName()
+    {
         return "Hyundai" . '<br/>';
     }
-    public function getPrice() {
+
+    public function getPrice()
+    {
         return 300000 . '<br/>';
     }
 }
+
 $car = new BMW();
 $car1 = new Elantra();
 echo $car->getCompanyName();
